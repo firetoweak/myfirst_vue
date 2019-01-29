@@ -52,7 +52,7 @@
           href="http://router.vuejs.org/"
           target="_blank"
         >
-          vue-router
+          vue-route
         </a>
       </li>
       <li>
@@ -88,7 +88,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome'
     }
   }
 }

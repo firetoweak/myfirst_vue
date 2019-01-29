@@ -1,23 +1,31 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <router-view/>
+    <first></first>
+
+    <div class="linkStyle">
+
+      <router-link to="/Home" class="link">首页</router-link>
+      <router-link to="/About" class="link">关于</router-link>
+      <router-link to="/Welcome" class="link">欢迎</router-link>
+      <router-view></router-view>
+    </div>
+
+
+
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
+  import first from './components/First'
+      export default {
+                  data(){
+                     return{}
+                  },
+  components:{first}
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import './assets/css/app.css';
 </style>
